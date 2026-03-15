@@ -11,7 +11,7 @@ function Shop() {
     const deleteProduct = async (id) => {
         try {
             const res = await axios.delete(
-                `http://localhost:5000/api/delete/${id}`,
+                `https://e-commerce-websit-2g7x.onrender.com/api/delete/${id}`,
                 { withCredentials: true }
             );
 
@@ -29,7 +29,7 @@ function Shop() {
         const fetchProducts = async () => {
             try {
                 const res = await axios.get(
-                    "http://localhost:5000/api/products"
+                    "https://e-commerce-websit-2g7x.onrender.com/api/products"
                 );
                 setitems(res.data);
             } catch (error) {
@@ -84,7 +84,7 @@ function Shop() {
                                 onClick={() => goToProduct(item._id)}
                             >
                                 <img
-                                    src={`http://localhost:5000/uploads/${item.img}`}
+                                    src={`https://e-commerce-websit-2g7x.onrender.com/${item.img}`}
                                     alt={item.name}
                                     className="
                                     h-95 w-70

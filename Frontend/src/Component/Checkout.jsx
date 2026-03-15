@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import axios from "axios";
 import toast from "react-hot-toast";
 import { useParams } from "react-router-dom";
-import { div } from "framer-motion/client";
+
 import { motion } from "framer-motion";
 
 function Checkout() {
@@ -16,7 +16,7 @@ function Checkout() {
     useEffect(() => {
         const fetchProduct = async () => {
             try {
-                const res = await axios.get(`http://localhost:5000/api/products/${id}`);
+                const res = await axios.get(`https://e-commerce-websit-2g7x.onrender.com/api/products/${id}`);
                 setproductitem(res.data);
             } catch (err) {
                 console.error("Error fetching product:", err.message);
@@ -28,7 +28,7 @@ function Checkout() {
     useEffect(() => {
         const fetchCart = async () => {
             try {
-                const res = await axios.get("http://localhost:5000/api/getcart");
+                const res = await axios.get("https://e-commerce-websit-2g7x.onrender.com/api/getcart");
                 setCartItems(res.data);
             } catch (err) {
                 console.error("Error fetching cart:", err);
@@ -46,7 +46,7 @@ function Checkout() {
 
     const onSubmit = async (data) => {
         try {
-            await axios.post("http://localhost:5000/api/create", {
+            await axios.post("https://e-commerce-websit-2g7x.onrender.com/api/create", {
                 productname: productitem.name,
                 price: productitem.price,
                 img: productitem.img,
@@ -96,7 +96,7 @@ function Checkout() {
                                     className="flex flex-col items-center bg-white p-4 rounded-xl shadow-md min-w-[160px]"
                                 >
                                     <img
-                                        src={`http://localhost:5000/uploads/${item.img}`}
+                                        src={`https://e-commerce-websit-2g7x.onrender.com/uploads/${item.img}`}
                                         alt={item.name}
                                         className="h-24 w-24 sm:h-28 sm:w-28 object-cover rounded-lg mb-3"
                                     />
@@ -126,7 +126,7 @@ function Checkout() {
                     {productitem && (
                         <div className="flex flex-col sm:flex-row items-center gap-6 bg-gray-50 p-4 rounded-xl">
                             <img
-                                src={`http://localhost:5000/uploads/${productitem.img}`}
+                                    src={`https://e-commerce-websit-2g7x.onrender.com/${productitem.img}`}
                                 alt={productitem.name}
                                 className="h-24 w-24 sm:h-28 sm:w-28 object-cover rounded-lg"
                             />

@@ -1,7 +1,7 @@
 
 
 
-import React from "react";
+// import React from "react";
 import { useForm } from "react-hook-form";
 import { useState } from "react";
 import axios from "axios";
@@ -21,7 +21,7 @@ function Register() {
     const hello = async (data) => {
         try {
             const res = await axios.post(
-                "http://localhost:5000/api/register",
+                "https://e-commerce-websit-2g7x.onrender.com/api/register",
                 data
             );
 

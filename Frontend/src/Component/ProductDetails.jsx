@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
@@ -17,7 +17,7 @@ function ProductDetails() {
 
     const addcart = async (data) => {
         try {
-            const res = await axios.post("http://localhost:5000/api/addcart", {
+            const res = await axios.post("https://e-commerce-websit-2g7x.onrender.com/api/addcart", {
                 name: data.name,
                 price: data.price,
                 img: data.img,
@@ -32,7 +32,7 @@ function ProductDetails() {
     useEffect(() => {
         const fetchProduct = async () => {
             try {
-                const res = await axios.get(`http://localhost:5000/api/products/${id}` );
+                const res = await axios.get(`https://e-commerce-websit-2g7x.onrender.com/api/products/${id}` );
                 setProduct(res.data);
             } catch (err) {
                 console.error("Error fetching product:", err.message);
@@ -47,7 +47,7 @@ function ProductDetails() {
         <div className="flex items-center bg-gray-100  p-6  justify-center gap-20 bg-taupe-300">
             <div className="h-220 w-130 p-4 rounded-lg flex gap-20">
                 <img
-                    src={`http://localhost:5000/uploads/${product.img}`}
+                    src={`https://e-commerce-websit-2g7x.onrender.com/uploads/${product.img}`}
                     alt={product.name}
                     className="h-180 w-130 object-cover rounded-lg shadow-md mt-30"
                 />

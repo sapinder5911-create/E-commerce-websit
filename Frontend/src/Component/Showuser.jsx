@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import  { useState, useEffect } from "react";
 import axios from "axios";
 import toast from "react-hot-toast";
 import { Trash } from "lucide-react";
@@ -9,7 +9,7 @@ function Showuser() {
     useEffect(() => {
         const fetchUsers = async () => {
             try {
-                const res = await axios.get("http://localhost:5000/api/showuser");
+                const res = await axios.get("https://e-commerce-websit-2g7x.onrender.com/api/showuser");
                 setItems(res.data);
             } catch (err) {
                 toast.error("Error fetching users");
@@ -22,7 +22,7 @@ function Showuser() {
     const deleteCartItem = async (id) => {
         try {
             const res = await axios.delete(
-                `http://localhost:5000/api/deleteuser/${id}`
+                `https://e-commerce-websit-2g7x.onrender.com/api/deleteuser/${id}`
             );
             setItems((prev) => prev.filter((item) => item._id !== id));
             toast.success(res.data.message);

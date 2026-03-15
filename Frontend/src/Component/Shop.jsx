@@ -18,7 +18,7 @@ function Shop() {
 
     const addcart = async (data) => {
         try {
-            const res = await axios.post("http://localhost:5000/api/addcart", {
+            const res = await axios.post("https://e-commerce-websit-2g7x.onrender.com/api/addcart", {
                 name: data.name,
                 price: data.price,
                 img: data.img,
@@ -35,7 +35,7 @@ function Shop() {
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const res = await axios.get("http://localhost:5000/api/products", );
+                const res = await axios.get("https://e-commerce-websit-2g7x.onrender.com/api/products", );
                 console.log("Frontend data:", res.data);
                 setitems(res.data);
 
@@ -68,7 +68,7 @@ function Shop() {
                             <img
                                 onClick={() => goToProduct(item._id)}
                                 className="h-95 w-70 object-cover gap-4"
-                                src={`http://localhost:5000/uploads/${item.img}`}
+                                src={`https://e-commerce-websit-2g7x.onrender.com/uploads/${item.img}`}
                                 alt={item.name}
                             ></img>
 

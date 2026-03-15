@@ -38,7 +38,7 @@ function Nav() {
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const res = await axios.get("http://localhost:5000/api/getcart");
+                const res = await axios.get("https://e-commerce-websit-2g7x.onrender.com/api/getcart");
                 setitems(res.data);
             } catch (err) {
                 console.error("Error fetching:", err.message);
@@ -50,7 +50,7 @@ function Nav() {
     const deleteCartItem = async (id) => {
         try {
             const res = await axios.delete(
-                `http://localhost:5000/api/deletecart/${id}`,
+                `https://e-commerce-websit-2g7x.onrender.com/api/deletecart/${id}`,
             );
             setitems((prev) => prev.filter((item) => item._id !== id));
         } catch (err) {
@@ -62,7 +62,7 @@ function Nav() {
 
     const handleLogout = async () => {
         try {
-            await axios.post("http://localhost:5000/api/logout", {
+            await axios.post("https://e-commerce-websit-2g7x.onrender.com/api/logout", {
                 withCredentials: true,
             });
             localStorage.removeItem("token");
@@ -203,7 +203,7 @@ function Nav() {
                                                     <div className="flex items-center gap-5">
                                                         <img
                                                             className="h-30 w-30 rounded-xl"
-                                                            src={`http://localhost:5000/uploads/${item.img}`}
+                                                            src={`https://e-commerce-websit-2g7x.onrender.com/uploads/${item.img}`}
                                                             alt="item"
                                                         />
                                                         <div className="text-3xl font-bold flex flex-col gap-5 p-3">

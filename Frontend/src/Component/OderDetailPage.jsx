@@ -1,5 +1,5 @@
 
-import React from "react";
+
 import axios from "axios";
 import { useState, useEffect } from "react";
 
@@ -9,7 +9,7 @@ function Order() {
     useEffect(() => {
         const fetchProduct = async () => {
             try {
-                const res = await axios.get("http://localhost:5000/api/order");
+                const res = await axios.get("https://e-commerce-websit-2g7x.onrender.com/api/order");
                 setitem(res.data);
             } catch (err) {
                 console.error("Error fetching product:", err.message);
@@ -43,7 +43,7 @@ function Order() {
                             >
                                 {/* Product Image */}
                                 <img
-                                    src={`http://localhost:5000/uploads/${index.img}`}
+                                    src={`https://e-commerce-websit-2g7x.onrender.com/uploads/${index.img}`}
                                     alt="order"
                                     className=" w-full h-100  sm:h-90   md:h-56 lg:h-60  object-cover "
                                 />

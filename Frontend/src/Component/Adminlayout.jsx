@@ -2,7 +2,7 @@
 
 
 
-import React from "react";
+
 import { Outlet, Link } from "react-router-dom";
 // import Back from "../assets/side.jpg";
 

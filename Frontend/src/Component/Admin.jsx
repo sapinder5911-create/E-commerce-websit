@@ -22,7 +22,7 @@ function Admin() {
 
         try {
             const res = await axios.post(
-                "http://localhost:5000/api/add",
+                "https://e-commerce-websit-2g7x.onrender.com/api/add",
                 formData,
                 { withCredentials: true }
             );
