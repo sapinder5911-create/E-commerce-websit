@@ -49,7 +49,7 @@ function About() {
                     <p className="text-5xl font-serif font-bold ml-50">We Strive to Provide Our <br />Customers with the hightest quality</p>
                     <p className="text-xl font-serif font-bold ml-50">Plants's Co . was founded in 1960 by a group or plant entnusiasts <br />  recognized the positive impact that plants can have on our lives. <br /> Whether it's purifying the air, reducing stress, or simply <br /> adding a touch
                         of beauty to
-                        your environment, plants are more <br /> than lust decoration-ney re a lifestyle</p>
+                        your environments, plants are more <br /> than lust decoration-ney re a lifestyle</p>
                     
                     <button className=" text-green-400"><Link to="/Login" id="hello">Contect us</Link></button>
 
