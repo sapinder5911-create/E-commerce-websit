@@ -15,7 +15,7 @@ import { Toaster } from "react-hot-toast";
 import OrderDetails from "./Component/OderDetailPage"
 // import { useState } from 'react'
 import './App.css'
-import { div, form, pre } from 'framer-motion/client'
+// import { div, form, pre } from 'framer-motion/client'
 import AdminProtectedRoute from "./Component/AdminProtectedRoute";
 import AdminLayout from './Component/Adminlayout'
 import Deleteproduct from "./Component/Deletproduct"
