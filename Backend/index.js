@@ -20,7 +20,7 @@ conn();
 
 app.use(cookieParser());
 app.use(cors({
-    origin: ["http://localhost:5173", "https://e-commerce-websit-alpha.vercel.app/"],
+    origin: ["http://localhost:5173", "https://e-commerce-websit-alpha.vercel.app"],
     credentials: true,
 
 }))
