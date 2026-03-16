@@ -236,7 +236,6 @@ function Home() {
                 price: data.price,
                 img: data.img,
             });
-
         } catch (err) {
             console.log(err);
         }
@@ -246,33 +245,25 @@ function Home() {
     return (
         <>
             {/* HERO */}
-            <div className="min-h-[500px] w-full flex justify-center bg-cover bg-center
-            bg-[url(https://static.wixstatic.com/media/c837a6_992ba64846024ddab0a484c034298629~mv2.jpeg/v1/fill/w_1873,h_1134,fp_0.49_0.23,q_90,usm_0.66_1.00_0.01,enc_auto/c837a6_a5d0bc62a83e4ebab069c11b7e15e25a~mv2.jpeg)]">
+            <div className="w-full min-h-screen flex items-center justify-center bg-cover bg-center px-4
+            bg-[url(https://static.wixstatic.com/media/c837a6_992ba64846024ddab0a484c034298629~mv2.jpeg)]">
 
                 <motion.div
-                    className="w-full max-w-6xl flex items-center justify-center flex-col text-center px-4"
+                    className="w-full max-w-5xl flex flex-col items-center text-center"
                     initial={{ opacity: 0, x: -100 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 1 }}>
 
-                    <div className="flex justify-center items-center">
-                        <p className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-bold text-white mt-10">
-                            Discover the beauty of
-                        </p>
-                    </div>
+                    <p className="text-2xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-white">
+                        Discover the beauty of
+                    </p>
 
-                    <div className="flex justify-center items-center">
-                        <p className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-bold text-white">
-                            Nature at Your Fingertips
-                        </p>
-                    </div>
+                    <p className="text-2xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-white">
+                        Nature at Your Fingertips
+                    </p>
 
-                    <button className="bg-green-400 text-black hover:bg-green-500 mt-10
-                    px-6 py-2 rounded-lg transition-all duration-500 
-                    hover:scale-110 hover:shadow-2xl animate-bounce">
-
+                    <button className="bg-green-400 mt-6 px-6 py-2 rounded-lg">
                         <Link to="/shop">Shop Now</Link>
-
                     </button>
 
                 </motion.div>
@@ -280,55 +271,53 @@ function Home() {
 
 
             {/* PRODUCTS */}
-            <div className="w-full flex flex-col items-center">
+            <div className="w-full flex flex-col items-center px-2">
 
                 <motion.div
-                    className="w-full max-w-7xl flex flex-col items-center px-4"
+                    className="w-full max-w-7xl flex flex-col items-center"
                     initial={{ opacity: 0, x: -100 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 1 }}
-                    viewport={{ once: true, amount: 0.2 }}
                 >
 
-                    <h1 className="text-2xl sm:text-3xl font-bold my-6">
+                    <h1 className="text-xl sm:text-3xl font-bold my-6">
                         Trending Products
                     </h1>
 
-                    <div className="flex flex-wrap justify-center gap-6 p-4">
+                    {/* GRID instead of flex-wrap */}
+                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
 
-                        {
-                            items.map((item) => (
+                        {items.map((item) => (
 
-                                <div
-                                    key={item._id}
-                                    className="flex flex-col items-center cursor-pointer p-4 rounded-lg hover:shadow-lg
-                                    w-[150px] sm:w-[200px] md:w-[230px]"
+                            <div
+                                key={item._id}
+                                className="flex flex-col items-center p-2 rounded-lg hover:shadow-lg"
+                            >
+
+                                <img
+                                    className="h-32 sm:h-40 md:h-48 w-full object-cover"
+                                    src={`https://e-commerce-websit-2g7x.onrender.com/uploads/${item.img}`}
+                                    alt={item.name}
+                                />
+
+                                <p className="text-sm sm:text-lg text-center">
+                                    {item.name}
+                                </p>
+
+                                <p className="text-sm sm:text-lg">
+                                    ${item.price}
+                                </p>
+
+                                <button
+                                    onClick={() => addcart(item)}
+                                    className="mt-2 px-3 py-1 bg-pink-600 text-black rounded"
                                 >
+                                    Add
+                                </button>
 
-                                    <img
-                                        className="h-[180px] sm:h-[220px] md:h-[260px] w-full object-cover"
-                                        src={`https://e-commerce-websit-2g7x.onrender.com/uploads/${item.img}`}
-                                        alt={item.name}
-                                    />
+                            </div>
 
-                                    <p className="text-lg">{item.name}</p>
-
-                                    <p className="text-lg sm:text-xl">
-                                        Price : ${item.price}
-                                    </p>
-
-                                    <button
-                                        onClick={() => addcart(item)}
-                                        className="mt-3 px-4 py-2 bg-pink-600 hover:bg-pink-700
-                                        text-black font-semibold rounded-lg shadow transition"
-                                    >
-                                        Add to cart
-                                    </button>
-
-                                </div>
-
-                            ))
-                        }
+                        ))}
 
                     </div>
 
@@ -339,37 +328,30 @@ function Home() {
 
 
             {/* SUBSCRIBE */}
-            <div className="min-h-[400px] w-full flex flex-col items-center bg-cover bg-center
-            bg-[url(https://static.wixstatic.com/media/c837a6_35bdfabce3724dad92a9f8828437078e~mv2.jpeg/v1/fill/w_1873,h_945,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_auto/84770f_85e5f4e9599f470cb22efaa7e0cf7d8f~mv2.jpeg)]">
+            <div className="w-full min-h-[400px] flex items-center justify-center bg-cover bg-center px-4
+            bg-[url(https://static.wixstatic.com/media/c837a6_35bdfabce3724dad92a9f8828437078e~mv2.jpeg)]">
 
                 <motion.div
-                    className="w-full max-w-5xl flex flex-col items-center text-center px-4"
+                    className="w-full max-w-4xl text-center"
                     initial={{ opacity: 0, y: 100 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1.5 }}
-                    viewport={{ once: true, amount: 0.2 }}
                 >
 
-                    <p className="text-2xl sm:text-4xl md:text-5xl font-serif font-bold text-white mt-10">
+                    <p className="text-xl sm:text-3xl md:text-4xl font-bold text-white">
                         Everything You Need to Know About Plants
                     </p>
 
-                    <p className="text-2xl sm:text-4xl md:text-5xl font-serif font-bold text-white">
+                    <p className="text-xl sm:text-3xl md:text-4xl font-bold text-white">
                         and More. No Spam, We Promise
                     </p>
 
-                    <p className="text-lg sm:text-xl font-serif font-bold text-white">
+                    <p className="text-sm sm:text-lg text-white">
                         Subscribe now and get 15% off...
                     </p>
 
-                    <button className="font-serif font-bold mt-6
-                    px-6 py-2 rounded-lg bg-white text-black
-                    transition-all duration-500 
-                    hover:scale-110 hover:bg-green-400
-                    hover:shadow-xl animate-bounce">
-
-                        Subscibe Now
-
+                    <button className="mt-4 px-6 py-2 bg-white rounded">
+                        Subscribe Now
                     </button>
 
                 </motion.div>
