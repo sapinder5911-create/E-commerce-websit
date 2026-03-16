@@ -219,7 +219,7 @@ function App() {
       path: "/",
       element: (
         <Suspense fallback={<div>Loading...</div>}>
-          {/* <Nav /> */}
+          <Nav />
           <Home />
           <Footer />
         </Suspense>
