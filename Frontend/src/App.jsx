@@ -114,7 +114,8 @@ function App() {
 {
     path: "/checkout/:id",
     element: <div>
-      {/* <Nav /> */}
+     
+      <Nav />
 
       <CheckoutPage />
 
