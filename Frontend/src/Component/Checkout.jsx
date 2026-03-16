@@ -126,7 +126,7 @@ function Checkout() {
                     {productitem && (
                         <div className="flex flex-col sm:flex-row items-center gap-6 bg-gray-50 p-4 rounded-xl">
                             <img
-                                    src={`https://e-commerce-websit-2g7x.onrender.com/${productitem.img}`}
+                                    src={`https://e-commerce-websit-2g7x.onrender.com/uploads/${productitem.img}`}
                                 alt={productitem.name}
                                 className="h-24 w-24 sm:h-28 sm:w-28 object-cover rounded-lg"
                             />
