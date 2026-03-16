@@ -378,6 +378,199 @@
 // export default Home;
 
 
+// import { Link } from "react-router-dom"
+// import { motion } from "framer-motion";
+// import { useEffect, useState } from "react"
+// import axios from "axios"
+// import toast from "react-hot-toast";
+
+// function Home() {
+
+//     const [items, setitems] = useState([]);
+
+//     useEffect(() => {
+//         const fetchProducts = async () => {
+//             try {
+//                 const res = await axios.get("https://e-commerce-websit-2g7x.onrender.com/api/products");
+//                 setitems(res.data);
+//             } catch (error) {
+//                 console.log("Error fetching ", error.message)
+//             }
+//         };
+
+//         fetchProducts();
+
+//     }, [])
+
+
+//     const addcart = async (data) => {
+//         try {
+//             await axios.post(
+//                 "https://e-commerce-websit-2g7x.onrender.com/api/addcart",
+//                 {
+//                     name: data.name,
+//                     price: data.price,
+//                     img: data.img,
+//                 }
+//             );
+
+//             toast.success("Added to cart");
+
+//         } catch (err) {
+//             toast.error("Something went wrong");
+//         }
+//     };
+
+//     return (
+//         <>
+//             {/* ================= HERO ================= */}
+
+//             <div className="w-full min-h-screen bg-cover bg-center flex items-center justify-center
+//             bg-[url(https://static.wixstatic.com/media/c837a6_992ba64846024ddab0a484c034298629~mv2.jpeg)]">
+
+//                 <div className="w-full max-w-screen-2xl px-6">
+
+//                     <motion.div
+//                         className="text-center"
+//                         initial={{ opacity: 0, x: -100 }}
+//                         animate={{ opacity: 1, x: 0 }}
+//                         transition={{ duration: 1 }}
+//                     >
+
+//                         <p className="text-3xl sm:text-5xl lg:text-6xl font-serif font-bold text-white">
+//                             Discover the beauty of
+//                         </p>
+
+//                         <p className="text-3xl sm:text-5xl lg:text-6xl font-serif font-bold text-white mt-4">
+//                             Nature at Your Fingertips
+//                         </p>
+
+//                         <Link to="/shop">
+//                             <button className="mt-10 px-6 py-3 bg-green-400 hover:bg-green-500
+//                             rounded-lg text-black font-bold
+//                             transition hover:scale-110">
+//                                 Shop Now
+//                             </button>
+//                         </Link>
+
+//                     </motion.div>
+
+//                 </div>
+
+//             </div>
+
+
+//             {/* ================= PRODUCTS ================= */}
+
+//             <div className="w-full bg-taupe-300 py-10">
+
+//                 <div className="max-w-screen-2xl mx-auto px-6">
+
+//                     <motion.div
+//                         initial={{ opacity: 0, y: 50 }}
+//                         whileInView={{ opacity: 1, y: 0 }}
+//                         transition={{ duration: 1 }}
+//                         viewport={{ once: true }}
+//                     >
+
+//                         <h1 className="text-3xl font-bold text-center mb-10">
+//                             Trending Products
+//                         </h1>
+
+//                         <div className="grid
+//                         grid-cols-1
+//                         sm:grid-cols-2
+//                         md:grid-cols-3
+//                         lg:grid-cols-4
+//                         gap-8">
+
+//                             {items.map((item) => (
+
+//                                 <div
+//                                     key={item._id}
+//                                     className="bg-white rounded-xl p-4 shadow hover:shadow-xl transition"
+//                                 >
+
+//                                     <img
+//                                         className="h-64 w-full object-cover rounded-lg"
+//                                         src={`https://e-commerce-websit-2g7x.onrender.com/uploads/${item.img}`}
+//                                         alt=""
+//                                     />
+
+//                                     <p className="text-xl mt-2 text-center">
+//                                         {item.name}
+//                                     </p>
+
+//                                     <p className="text-2xl text-center">
+//                                         ${item.price}
+//                                     </p>
+
+//                                     <button
+//                                         onClick={() => addcart(item)}
+//                                         className="mt-3 w-full py-2
+//                                         bg-pink-600 hover:bg-pink-700
+//                                         rounded-lg text-white"
+//                                     >
+//                                         Add to cart
+//                                     </button>
+
+//                                 </div>
+
+//                             ))}
+
+//                         </div>
+
+//                     </motion.div>
+
+//                 </div>
+
+//             </div>
+
+
+//             {/* ================= SUBSCRIBE ================= */}
+
+//             <div className="w-full min-h-[500px] bg-cover bg-center flex items-center justify-center
+//             bg-[url(https://static.wixstatic.com/media/c837a6_35bdfabce3724dad92a9f8828437078e~mv2.jpeg)]">
+
+//                 <div className="max-w-screen-2xl px-6 text-center">
+
+//                     <motion.div
+//                         initial={{ opacity: 0, y: 100 }}
+//                         whileInView={{ opacity: 1, y: 0 }}
+//                         transition={{ duration: 1 }}
+//                         viewport={{ once: true }}
+//                     >
+
+//                         <p className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
+//                             Everything You Need to Know About Plants
+//                         </p>
+
+//                         <p className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mt-3">
+//                             and More. No Spam, We Promise
+//                         </p>
+
+//                         <p className="text-xl text-white mt-5">
+//                             Subscribe now and get 15% off
+//                         </p>
+
+//                         <button className="mt-8 px-6 py-3
+//                         bg-white text-black rounded-lg
+//                         hover:bg-green-400 transition">
+//                             Subscribe Now
+//                         </button>
+
+//                     </motion.div>
+
+//                 </div>
+
+//             </div>
+
+//         </>
+//     )
+// }
+
+// export default Home;
+
 import { Link } from "react-router-dom"
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react"
@@ -428,7 +621,7 @@ function Home() {
             <div className="w-full min-h-screen bg-cover bg-center flex items-center justify-center
             bg-[url(https://static.wixstatic.com/media/c837a6_992ba64846024ddab0a484c034298629~mv2.jpeg)]">
 
-                <div className="w-full max-w-screen-2xl px-6">
+                <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-10">
 
                     <motion.div
                         className="text-center"
@@ -437,11 +630,11 @@ function Home() {
                         transition={{ duration: 1 }}
                     >
 
-                        <p className="text-3xl sm:text-5xl lg:text-6xl font-serif font-bold text-white">
+                        <p className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white">
                             Discover the beauty of
                         </p>
 
-                        <p className="text-3xl sm:text-5xl lg:text-6xl font-serif font-bold text-white mt-4">
+                        <p className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white mt-4">
                             Nature at Your Fingertips
                         </p>
 
@@ -464,7 +657,7 @@ function Home() {
 
             <div className="w-full bg-taupe-300 py-10">
 
-                <div className="max-w-screen-2xl mx-auto px-6">
+                <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-10">
 
                     <motion.div
                         initial={{ opacity: 0, y: 50 }}
@@ -532,7 +725,7 @@ function Home() {
             <div className="w-full min-h-[500px] bg-cover bg-center flex items-center justify-center
             bg-[url(https://static.wixstatic.com/media/c837a6_35bdfabce3724dad92a9f8828437078e~mv2.jpeg)]">
 
-                <div className="max-w-screen-2xl px-6 text-center">
+                <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-10 text-center">
 
                     <motion.div
                         initial={{ opacity: 0, y: 100 }}
@@ -541,15 +734,15 @@ function Home() {
                         viewport={{ once: true }}
                     >
 
-                        <p className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
+                        <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">
                             Everything You Need to Know About Plants
                         </p>
 
-                        <p className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mt-3">
+                        <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mt-3">
                             and More. No Spam, We Promise
                         </p>
 
-                        <p className="text-xl text-white mt-5">
+                        <p className="text-lg sm:text-xl text-white mt-5">
                             Subscribe now and get 15% off
                         </p>
 
