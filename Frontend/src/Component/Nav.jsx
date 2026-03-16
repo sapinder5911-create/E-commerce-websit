@@ -315,9 +315,9 @@ function Nav() {
 
     return (
 
-        <div className="w-full h-20 flex items-center justify-center bg-[url(https://static.wixstatic.com/media/c837a6_35bdfabce3724dad92a9f8828437078e~mv2.jpeg)] bg-cover">
+        <div className="w-full h-20 flex items-center bg-[url(https://static.wixstatic.com/media/c837a6_35bdfabce3724dad92a9f8828437078e~mv2.jpeg)] bg-cover">
 
-            <div className="h-20 w-full max-w-screen-xl px-4 flex items-center justify-between text-xl">
+            <div className="w-full max-w-screen-2xl mx-auto px-6 flex items-center justify-between text-xl">
 
                 {/* LEFT */}
                 <div className="flex flex-1 items-center">
@@ -325,12 +325,13 @@ function Nav() {
                     <a href="" id="hello">🌿Plants</a>
 
                     <div className="hidden md:flex flex-1 justify-center gap-6 text-white">
-                        <Link to="/" id="hello" className="text-blue-400 hover:text-blue-600">Home</Link>
-                        <Link to="/about" id="hello" className="text-green-400 hover:text-green-600">About</Link>
-                        <Link to="/shop" id="hello" className="text-yellow-400 hover:text-yellow-600">Shop</Link>
+                        <Link to="/" id="hello">Home</Link>
+                        <Link to="/about" id="hello">About</Link>
+                        <Link to="/shop" id="hello">Shop</Link>
                     </div>
 
                 </div>
+
 
 
                 {/* RIGHT */}

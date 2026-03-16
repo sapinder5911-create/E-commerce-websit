@@ -71,71 +71,166 @@
 // export default Footer
 
 
+// import { motion } from "framer-motion";
+
+// function Footer() {
+//     return (
+//         <>
+//             <div className="min-h-[400px] w-full flex items-center justify-center bg-black border border-white">
+
+//                 <motion.div
+//                     className="min-h-[300px] w-full max-w-7xl flex flex-col md:flex-row flex-wrap justify-evenly bg-black mt-5 gap-6 px-4"
+
+//                     initial={{ opacity: 0, y: 100 }}
+//                     whileInView={{ opacity: 1, y: 0 }}
+//                     transition={{ duration: 1 }}
+//                     viewport={{ once: true, amount: 0.2 }}
+//                 >
+
+//                     <div className="min-h-[200px] w-full md:w-40 text-white font-serif font-bold">
+//                         <p className="text-2xl">Contect</p>
+
+//                         Address: 500 Terry <br />
+//                         Francine Street <br />
+//                         San Francisco, CA 94158 <br />
+//                         Phone: 123-456-7890 <br />
+//                         Email: info@mysite.com <br />
+//                     </div>
+
+//                     <div className="min-h-[200px] w-full md:w-40 text-white font-serif font-bold">
+//                         <p className="text-2xl">Shop</p>
+//                         Shop All Plants <br />
+//                         Pots <br />
+//                         Sale <br />
+//                         Subscriptions <br />
+//                     </div>
+
+//                     <div className="min-h-[200px] w-full md:w-40 text-white font-serif font-bold">
+//                         <p className="text-2xl">helpful Links</p>
+//                         FAQ <br />
+//                         Shipping Policy <br />
+//                         Refund Policy <br />
+//                         Terms & Conditions <br />
+//                         Accessibility Statement <br />
+//                         Privacy Policy <br />
+//                     </div>
+
+//                     <div className="min-h-[200px] w-full md:w-40 text-white font-serif font-bold">
+//                         <p className="text-2xl">Company</p>
+//                         Our Story <br />
+//                         Contact Us <br />
+//                     </div>
+
+//                 </motion.div>
+
+//             </div>
+
+//             <div className="h-20 w-full border border-black flex bg-black">
+
+//                 <motion.p
+//                     className="text-white text-center text-sm font-serif font-bold m-auto"
+
+//                     initial={{ opacity: 0, y: 100 }}
+//                     whileInView={{ opacity: 1, y: 0 }}
+//                     transition={{ duration: 1 }}
+//                     viewport={{ once: true, amount: 0.2 }}
+//                 >
+//                     Copyright © 2026 Plants's Co. All rights reserved.
+//                 </motion.p>
+
+//             </div>
+//         </>
+//     );
+// }
+
+// export default Footer;
+
 import { motion } from "framer-motion";
 
 function Footer() {
     return (
         <>
-            <div className="min-h-[400px] w-full flex items-center justify-center bg-black border border-white">
+            <div className="w-full bg-black">
 
-                <motion.div
-                    className="min-h-[300px] w-full max-w-7xl flex flex-col md:flex-row flex-wrap justify-evenly bg-black mt-5 gap-6 px-4"
+                <div className="max-w-screen-2xl mx-auto px-6 py-10">
 
-                    initial={{ opacity: 0, y: 100 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1 }}
-                    viewport={{ once: true, amount: 0.2 }}
-                >
+                    <motion.div
+                        className="grid
+                        grid-cols-1
+                        sm:grid-cols-2
+                        md:grid-cols-3
+                        lg:grid-cols-4
+                        gap-10 text-white font-serif font-bold"
 
-                    <div className="min-h-[200px] w-full md:w-40 text-white font-serif font-bold">
-                        <p className="text-2xl">Contect</p>
+                        initial={{ opacity: 0, y: 100 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1 }}
+                        viewport={{ once: true, amount: 0.2 }}
+                    >
 
-                        Address: 500 Terry <br />
-                        Francine Street <br />
-                        San Francisco, CA 94158 <br />
-                        Phone: 123-456-7890 <br />
-                        Email: info@mysite.com <br />
-                    </div>
+                        {/* Contact */}
+                        <div>
+                            <p className="text-2xl mb-3">Contact</p>
 
-                    <div className="min-h-[200px] w-full md:w-40 text-white font-serif font-bold">
-                        <p className="text-2xl">Shop</p>
-                        Shop All Plants <br />
-                        Pots <br />
-                        Sale <br />
-                        Subscriptions <br />
-                    </div>
+                            Address: 500 Terry <br />
+                            Francine Street <br />
+                            San Francisco, CA 94158 <br />
+                            Phone: 123-456-7890 <br />
+                            Email: info@mysite.com
+                        </div>
 
-                    <div className="min-h-[200px] w-full md:w-40 text-white font-serif font-bold">
-                        <p className="text-2xl">helpful Links</p>
-                        FAQ <br />
-                        Shipping Policy <br />
-                        Refund Policy <br />
-                        Terms & Conditions <br />
-                        Accessibility Statement <br />
-                        Privacy Policy <br />
-                    </div>
 
-                    <div className="min-h-[200px] w-full md:w-40 text-white font-serif font-bold">
-                        <p className="text-2xl">Company</p>
-                        Our Story <br />
-                        Contact Us <br />
-                    </div>
+                        {/* Shop */}
+                        <div>
+                            <p className="text-2xl mb-3">Shop</p>
 
-                </motion.div>
+                            Shop All Plants <br />
+                            Pots <br />
+                            Sale <br />
+                            Subscriptions
+                        </div>
+
+
+                        {/* Links */}
+                        <div>
+                            <p className="text-2xl mb-3">Helpful Links</p>
+
+                            FAQ <br />
+                            Shipping Policy <br />
+                            Refund Policy <br />
+                            Terms & Conditions <br />
+                            Privacy Policy
+                        </div>
+
+
+                        {/* Company */}
+                        <div>
+                            <p className="text-2xl mb-3">Company</p>
+
+                            Our Story <br />
+                            Contact Us
+                        </div>
+
+                    </motion.div>
+
+                </div>
 
             </div>
 
-            <div className="h-20 w-full border border-black flex bg-black">
+
+            {/* Bottom bar */}
+
+            <div className="w-full bg-black border-t border-gray-700">
 
                 <motion.p
-                    className="text-white text-center text-sm font-serif font-bold m-auto"
+                    className="text-white text-center text-sm font-serif font-bold py-6"
 
                     initial={{ opacity: 0, y: 100 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
-                    viewport={{ once: true, amount: 0.2 }}
+                    viewport={{ once: true }}
                 >
-                    Copyright © 2026 Plants's Co. All rights reserved.
+                    Copyright © 2026 Plants Co. All rights reserved.
                 </motion.p>
 
             </div>
