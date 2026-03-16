@@ -84,7 +84,7 @@ function Shop() {
                                 onClick={() => goToProduct(item._id)}
                             >
                                 <img
-                                    src={`https://e-commerce-websit-2g7x.onrender.com/${item.img}`}
+                                    src={`https://e-commerce-websit-2g7x.onrender.com/uploads/${item.img}`}
                                     alt={item.name}
                                     className="
                                     h-95 w-70
