@@ -289,7 +289,7 @@ function Home() {
 
             {/* PRODUCTS */}
 
-            <div className="w-full bg-taupe-300 py-10">
+            <div className="w-full bg-taupe-300 py-10 h-320  ">
 
                 <div className="w-full px-4 sm:px-6 lg:px-10">
 
@@ -304,22 +304,17 @@ function Home() {
                             Trending Products
                         </h1>
 
-                        <div className="grid
-                        grid-cols-1
-                        sm:grid-cols-2
-                        md:grid-cols-3
-                        lg:grid-cols-4
-                        gap-8">
+                        <div className="flex flex-wrap justify-evenly b p-6 gap-2">
 
                             {items.map((item) => (
 
                                 <div
                                     key={item._id}
-                                    className="bg-white rounded-xl p-4 shadow hover:shadow-xl transition"
+                                    className="bg-white rounded-xl p-4 shadow hover:shadow-xl transition sm:w-[100px] md:w-[150px] lg:w-[330px] justify-center "
                                 >
 
                                     <img
-                                        className="h-64 w-full object-cover rounded-lg"
+                                        className="h-108 w-full  w-full   object-cover rounded-lg"
                                         src={`https://e-commerce-websit-2g7x.onrender.com/uploads/${item.img}`}
                                         alt=""
                                     />

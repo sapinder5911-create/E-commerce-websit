@@ -74,7 +74,7 @@ function About() {
     return (
         <div className="min-h-screen w-full flex flex-col">
 
-            <div className="min-h-[500px] w-full flex flex-col justify-center items-center bg-cover bg-center
+            <div className="min-h-[650px] w-full flex flex-col justify-center items-center bg-cover bg-center
             bg-[url(https://static.wixstatic.com/media/11062b_3124664d3f4747b8ac3f20021182544c~mv2.jpg/v1/fill/w_1801,h_716,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Greenhouse%20Garden%20View.jpg)]">
 
                 <motion.div
@@ -106,7 +106,7 @@ function About() {
             </div>
 
 
-            <div className="min-h-[600px] w-full bg-cover bg-center
+            <div className="min-h-[650px] w-full bg-cover bg-center
             bg-[url(https://images.pexels.com/photos/2239676/pexels-photo-2239676.jpeg)]">
 
                 <motion.div
@@ -117,20 +117,20 @@ function About() {
                     viewport={{ once: true, amount: 0.2 }}
                 >
 
-                    <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold">
-                        We Strive to Provide Our <br />
-                        Customers with the hightest quality
+                    <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold mt-10 ml-10">
+                        We Strive to <br /> Provide Our 
+                        Customers <br /> with the hightest quality
                     </p>
 
-                    <p className="text-sm sm:text-lg md:text-xl font-serif font-bold">
-                        Plants's Co . was founded in 1960 by a group or plant entnusiasts
-                        recognized the positive impact that plants can have on our lives.
-                        Whether it's purifying the air, reducing stress, or simply
-                        adding a touch of beauty to your environments, plants are more
+                    <p className="text-sm sm:text-lg md:text-xl font-serif font-bold mt-2 ml-10">
+                        Plants's Co . was founded in 1960 by a group or plant <br />entnusiasts
+                        recognized the positive impact that plants can <br />on our lives.
+                        Whether it's purifying the air, reducing stress, <br />or simply
+                        adding a touch of beauty to your environments, <br /> plants are more
                         than lust decoration-ney re a lifestyle
                     </p>
 
-                    <button className="text-green-400 text-lg">
+                    <button className="text-green-400 text-lg ml-10">
                         <Link to="/Login" id="hello">Contect us</Link>
                     </button>
 

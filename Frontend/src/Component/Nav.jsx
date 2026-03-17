@@ -314,14 +314,14 @@ function Nav() {
 
             <div className="w-full flex flex-nowrap justify-center items-center bg-cover bg-no-repeat  px-3 sm:px-6 md:px-10 py-2 bg-[url(https://static.wixstatic.com/media/c837a6_35bdfabce3724dad92a9f8828437078e~mv2.jpeg/v1/fill/w_1873,h_945,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_auto/84770f_85e5f4e9599f470cb22efaa7e0cf7d8f~mv2.jpeg)] bg-cover">
 
-                <div className="h-20 w-full sm:w-[250px] md:w-[300px] lg:w-[350px] px-4 flex items-center justify-between text-xl">
+                <div className="h-20 w-full sm:w-[250px] md:w-[300px] lg:w-[1400px] px-4 flex items-center justify-between text-xl">
 
                 {/* LEFT */}
                 <div className="flex-1 flex items-center gap-4">
 
                     <a href="" id="hello">🌿Plants</a>
 
-                        <div className="flex flex-wrap justify-evenly sm:justify-evenly items-center text-sm sm:text-base font-bold  sm:gap-1 border border-black w-full sm:w-[100px] md:w-[120px] lg:w-[150px]">
+                        <div className="flex flex-wrap justify-evenly sm:justify-evenly items-center text-sm sm:text-base font-bold  sm:gap-1 w-full sm:w-[100px] md:w-[150px] lg:w-[600px]">
 
                         <Link to="/" id="hello" className="text-blue-400 hover:text-blue-600">
                             Home
