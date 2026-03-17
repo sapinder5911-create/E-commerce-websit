@@ -314,7 +314,7 @@ function Home() {
                                 >
 
                                     <img
-                                        className="h-108 w-full  w-full   object-cover rounded-lg"
+                                        className=" w-full h-95  bg-cover  object-cover rounded-lg"
                                         src={`https://e-commerce-websit-2g7x.onrender.com/uploads/${item.img}`}
                                         alt=""
                                     />
@@ -331,7 +331,7 @@ function Home() {
                                         onClick={() => addcart(item)}
                                         className="mt-3 w-full py-2
                                         bg-pink-600 hover:bg-pink-700
-                                        rounded-lg text-white"
+                                        rounded-lg text-black"
                                     >
                                         Add to cart
                                     </button>

@@ -317,11 +317,11 @@ function Nav() {
                 <div className="h-20 w-full sm:w-[250px] md:w-[300px] lg:w-[1400px] px-4 flex items-center justify-between text-xl">
 
                 {/* LEFT */}
-                <div className="flex-1 flex items-center gap-4">
+                    <div className="flex-1 flex items-center gap-4 ">
 
                     <a href="" id="hello">🌿Plants</a>
 
-                        <div className="flex flex-wrap justify-evenly sm:justify-evenly items-center text-sm sm:text-base font-bold  sm:gap-1 w-full sm:w-[100px] md:w-[150px] lg:w-[600px]">
+                        <div className="flex flex-wrap justify-evenly sm:justify-evenly items-center  text-sm md:text-lg lg:text-md sm:gap-1 w-full sm:w-[100px] md:w-[150px] lg:w-[600px]   font-bold">
 
                         <Link to="/" id="hello" className="text-blue-400 hover:text-blue-600">
                             Home
