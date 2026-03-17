@@ -304,7 +304,7 @@ function Home() {
                             Trending Products
                         </h1>
 
-                        <div className="flex flex-wrap justify-evenly b p-6 gap-2">
+                        <div className="flex flex-wrap justify-evenly b p-6 gap-2 ">
 
                             {items.map((item) => (
 
@@ -386,6 +386,7 @@ function Home() {
                 </div>
 
             </div>
+
 
         </>
     )
