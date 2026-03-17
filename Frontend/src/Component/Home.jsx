@@ -352,7 +352,7 @@ function Home() {
 
                 <div className="w-full max-w-[1400px] flex flex-col items-center">
 
-                    <h1 className="text-2xl sm:text-3xl font-bold my-6">
+                    <h1 className="text-2xl sm:text-3xl font-bold my-6 flex items-center sm:items-center ">
                         Trending Products
                     </h1>
 
@@ -374,7 +374,7 @@ function Home() {
 
                                     <img
                                         onClick={() => goToProduct(item._id)}
-                                        className="w-full  h-40  sm:h-80 md:h-56 lg:h-90 object-cover rounded-lg "
+                                        className="w-full  h-40  sm:h-80 md:h-80 lg:h-90 object-cover rounded-lg "
                                         src={`https://e-commerce-websit-2g7x.onrender.com/uploads/${item.img}`}
                                         alt={item.name}
                                     />
