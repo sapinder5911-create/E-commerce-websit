@@ -75,7 +75,7 @@ function Nav() {
     };
 
     return (
-        <div className="h-20 w-380 grid grid-cols-1 md:grid-cols-2 lg:grid-col-3 flex items-center justify-center bg-[url(https://static.wixstatic.com/media/c837a6_35bdfabce3724dad92a9f8828437078e~mv2.jpeg/v1/fill/w_1873,h_945,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_auto/84770f_85e5f4e9599f470cb22efaa7e0cf7d8f~mv2.jpeg)]">
+        <div className="h-20 w-380 flex items-center justify-center bg-[url(https://static.wixstatic.com/media/c837a6_35bdfabce3724dad92a9f8828437078e~mv2.jpeg/v1/fill/w_1873,h_945,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_auto/84770f_85e5f4e9599f470cb22efaa7e0cf7d8f~mv2.jpeg)]">
 
             <div className="h-20 w-300 flex items-center justify-between text-xl ">
 

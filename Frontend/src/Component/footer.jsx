@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 function Footer (){
     return (
         <>
-            <div className="h-90 w-380  flex items-center justify-center bg-black border border-white  grid grid-cols-1 md:grid-cols-2 lg:grid-col-3 ">
+            <div className="h-90 w-380  flex items-center justify-center bg-black border border-white   ">
                 <motion.div className="h-70 w-300  flex items-center justify-evenly bg-black mt-5 "
                     initial={{ opacity: 0, y: 100 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -48,7 +48,7 @@ function Footer (){
             </motion.div >
            
         </div >
-            <div className="h-20 w-full border border-black flex bg-black  grid grid-cols-1 md:grid-cols-2 lg:grid-col-3 "
+            <div className="h-20 w-full border border-black flex bg-black   "
                 
             
             >
