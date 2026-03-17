@@ -200,29 +200,13 @@ function Login() {
     };
 
     return (
-        <div className="
-        min-h-screen
-        w-full
-        flex
-        flex-col
-        md:flex-row
-        bg-cover
-        bg-center
-        bg-no-repeat
+        <div className=" min-h-screen w-full   flex  flex-col md:flex-row bg-cover bg-center bg-no-repeat
         bg-[url('https://images.pexels.com/photos/1931143/pexels-photo-1931143.jpeg')]
         ">
 
             {/* LEFT TEXT SECTION */}
             <motion.div
-                className="
-                md:w-1/2
-                flex
-                items-center
-                justify-center
-                p-6
-                text-black
-                text-center
-                md:text-left
+                className="  md:w-1/2   flex items-center justify-center p-6 text-black  text-center  md:text-left
                 "
                 initial={{ opacity: 0, x: -100 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -230,12 +214,7 @@ function Login() {
             >
                 <div className="max-w-xl">
 
-                    <h1 className="
-                    text-2xl
-                    sm:text-3xl
-                    md:text-5xl
-                    font-serif
-                    font-bold
+                    <h1 className=" text-2xl sm:text-3xl md:text-5xl  font-serif   font-bold
                     leading-tight
                     ">
                         Make Your Home a Greener Place
@@ -246,13 +225,7 @@ function Login() {
 
             {/* RIGHT FORM SECTION */}
             <motion.div
-                className="
-                md:w-1/2
-                flex
-                items-center
-                justify-center
-                p-4
-                sm:p-6
+                className="  md:w-1/2  flex items-center    justify-center  p-4    sm:p-6
                 "
                 initial={{ opacity: 0, x: 100 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -261,20 +234,17 @@ function Login() {
 
                 <form
                     onSubmit={handleSubmit(hello)}
-                    className="
-                    bg-white
-                    bg-opacity-90
-                    backdrop-blur-md
-                    shadow-2xl
-                    rounded-2xl
-                    p-6
-                    sm:p-8
-                    w-full
-                    max-w-md
-                    flex
-                    flex-col
-                    gap-5
+                    className="  bg-white bg-opacity-90  backdrop-blur-md shadow-2xl rounded-2xl  p-6 sm:p-8   w-full  flex   flex-col gap-5
                     "
+                    
+                   
+                    
+                    
+                   
+                    
+                  
+                  
+                    
                 >
 
                     <h2 className="text-xl sm:text-2xl font-semibold text-center mb-2">
@@ -342,13 +312,7 @@ function Login() {
 
                         <Link
                             to="/"
-                            className="
-                            flex-1
-                            text-center
-                            text-white
-                            py-2
-                            rounded-xl
-                            transition
+                            className=" flex-1  text-center  text-white py-2 rounded-xl transition
                             "
                         >
                             Back
@@ -356,15 +320,7 @@ function Login() {
 
                         <button
                             type="submit"
-                            className="
-                            flex-1
-                            bg-pink-700
-                            text-black
-                            py-2
-                            rounded-xl
-                            hover:border-pink-800
-                            transition
-                            border
+                            className="  flex-1   bg-pink-700  text-black py-2  rounded-xl  hover:border-pink-800  transition  border
                             border-black
                             "
                         >

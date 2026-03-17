@@ -174,32 +174,18 @@ function Shop() {
                         items.map((item) => (
                             <div
                                 key={item._id}
-                                className="
-                                flex flex-col items-center
-                                cursor-pointer
-                                p-4
-                                rounded-lg
-                                hover:shadow-lg
-                                w-[90%]
-                                sm:w-[45%]
-                                md:w-[30%]
-                                lg:w-[30%]
-                                xl:w-[23%]
-                                bg-white
-                                "
+                                className=" flex flex-col items-center  cursor-pointer p-4   rounded-lg  hover:shadow-lg  w-[90%] sm:w-[45%]  md:w-[30%] lg:w-[30%]  xl:w-[23%]  bg-white"
+                               
+                               
+                         
+                                
+                               
+                         
                             >
 
                                 <img
                                     onClick={() => goToProduct(item._id)}
-                                    className="
-                                    w-full
-                                    h-40
-                                    sm:h-48
-                                    md:h-56
-                                    lg:h-90
-                                    object-cover
-                                    rounded-lg
-                                    "
+                                    className="w-full  h-40  sm:h-48 md:h-56 lg:h-90 object-cover rounded-lg "
                                     src={`https://e-commerce-websit-2g7x.onrender.com/uploads/${item.img}`}
                                     alt={item.name}
                                 />
@@ -218,19 +204,7 @@ function Shop() {
                                         role === "user" && (
                                             <button
                                                 onClick={() => { addcart(item) }}
-                                                className="
-                                                mt-3
-                                                px-4
-                                                sm:px-6
-                                                py-2
-                                                bg-pink-600
-                                                hover:bg-pink-700
-                                                text-black
-                                                font-semibold
-                                                rounded-lg
-                                                shadow
-                                                transition
-                                                text-sm sm:text-base
+                                                className="   mt-3  px-4 sm:px-6  py-2  bg-pink-600  hover:bg-pink-700 text-black font-semibold rounded-lg shadow   transition text-sm sm:text-base
                                                 "
                                             >
                                                 Add to cart
