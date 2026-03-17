@@ -155,17 +155,17 @@ function Footer() {
     return (
         <>
 
-            <div className="min-h-[360px] w-full  flex items-center justify-center bg-black ">
+            <div className="min-h-[360px] w-full  flex items-center md:items-center justify-center bg-black ">
 
                 <motion.div
-                    className="  w-full sm:w-[100px] md:w-[150px] lg:w-[1150px] flex flex-wrap md:flex-nowrap justify-evenly gap-8 p-6 bg-black mt-5 items-center justify-center "
+                    className="  w-full sm:w-[100px] md:w-[150px] lg:w-[1150px] flex flex-wrap md:flex-nowrap justify-evenly gap-8 p-6 bg-black mt-5 items-center  md:items-center justify-center "
                     initial={{ opacity: 0, y: 100 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
                     viewport={{ once: true, amount: 0.2 }}
                 >
 
-                    <div className="w-full sm:w-1/2 md:w-1/4 text-white font-serif font-bold  items-center justify-center  ">
+                    <div className="w-full sm:w-1/2 md:w-1/4 text-white font-serif font-bold  items-center  justify-center  ">
                         <p className="text-2xl items-center justify-center ">Contect</p>
 
                         Address: 500 Terry <br />

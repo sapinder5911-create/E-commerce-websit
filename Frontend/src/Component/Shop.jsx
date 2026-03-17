@@ -161,7 +161,7 @@ function Shop() {
     return (
         <div className="w-full flex flex-col items-center bg-taupe-300 min-h-screen">
 
-            <div className="w-full max-w-[1400px] flex flex-col items-center">
+            <div className="w-full max-w-[1400px] flex flex-col items-center md:items-center">
 
                 <h1 className="text-2xl sm:text-3xl font-bold my-6">
                     Trending Products
