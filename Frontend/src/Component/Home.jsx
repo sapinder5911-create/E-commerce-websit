@@ -52,13 +52,7 @@ function Home() {
 
     return (
         < >
-            <div className="h-200 w-380 flex justify-center bg-cover bg-center  flex flex-col
-sm:flex-col
-md:flex-row
-lg:flex-row
-xl:flex-row
-
-            bg-[url(https://static.wixstatic.com/media/c837a6_992ba64846024ddab0a484c034298629~mv2.jpeg/v1/fill/w_1873,h_1134,fp_0.49_0.23,q_90,usm_0.66_1.00_0.01,enc_auto/c837a6_a5d0bc62a83e4ebab069c11b7e15e25a~mv2.jpeg)]">
+            <div className="h-200 w-380 flex justify-center bg-cover bg-center  grid grid-cols-1 md:grid-cols-2 lg:grid-col-3 bg-[url(https://static.wixstatic.com/media/c837a6_992ba64846024ddab0a484c034298629~mv2.jpeg/v1/fill/w_1873,h_1134,fp_0.49_0.23,q_90,usm_0.66_1.00_0.01,enc_auto/c837a6_a5d0bc62a83e4ebab069c11b7e15e25a~mv2.jpeg)]">
 
                 <motion.div className="h-130 w-300 flex items-center justify-center flex-col"
                     initial={{ opacity: 0, x: -100 }}
@@ -92,11 +86,8 @@ xl:flex-row
             </div >
 
 
-            <div className="h-300 w-full  flex flex-col  items-center bg-taupe-300 flex flex-col
-sm:flex-col
-md:flex-row
-lg:flex-row
-xl:flex-row
+            <div className="h-300 w-full  flex flex-col  items-center bg-taupe-300  grid grid-cols-1 md:grid-cols-2 lg:grid-col-3
+
 ">
                 <motion.div className="h-320 w-370  flex flex-col  items-center "
                     initial={{ opacity: 0, x: -100 }}
@@ -156,7 +147,7 @@ xl:flex-row
 
 
 
-            <div className="h-150 w-380 flex flex-col items-center bg-cover bg-center
+            <div className="h-150 w-380 flex flex-col items-center bg-cover bg-center  grid grid-cols-1 md:grid-cols-2 lg:grid-col-3
             bg-[url(https://static.wixstatic.com/media/c837a6_35bdfabce3724dad92a9f8828437078e~mv2.jpeg/v1/fill/w_1873,h_945,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_auto/84770f_85e5f4e9599f470cb22efaa7e0cf7d8f~mv2.jpeg)]">
 
               
