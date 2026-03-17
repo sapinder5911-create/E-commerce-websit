@@ -289,7 +289,7 @@ function Home() {
 
             {/* PRODUCTS */}
 
-            <div className="w-full bg-taupe-300 py-10 h-320  ">
+            <div className="w-full bg-taupe-300 py-10   ">
 
                 <div className="w-full px-4 sm:px-6 lg:px-10">
 
