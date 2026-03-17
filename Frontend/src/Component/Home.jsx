@@ -289,7 +289,7 @@ function Home() {
 
             {/* PRODUCTS */}
 
-            <div className="w-full bg-taupe-300 py-10   ">
+            {/* <div className="w-full bg-taupe-300 py-10   ">
 
                 <div className="w-full px-4 sm:px-6 lg:px-10">
 
@@ -343,6 +343,73 @@ function Home() {
                         </div>
 
                     </motion.div>
+
+                </div>
+
+            </div> */}
+
+            <div className="w-full flex flex-col items-center bg-taupe-300 min-h-screen">
+
+                <div className="w-full max-w-[1400px] flex flex-col items-center">
+
+                    <h1 className="text-2xl sm:text-3xl font-bold my-6">
+                        Trending Products
+                    </h1>
+
+                    {/* responsive container */}
+                    <div className="flex flex-wrap justify-center p-4 gap-8">
+
+                        {
+                            items.map((item) => (
+                                <div
+                                    key={item._id}
+                                    className=" flex flex-col items-center  cursor-pointer p-4   rounded-lg  hover:shadow-lg  w-[90%] sm:w-[45%]  md:w-[30%] lg:w-[30%]  xl:w-[23%]  bg-white"
+
+
+
+
+
+
+                                >
+
+                                    <img
+                                        onClick={() => goToProduct(item._id)}
+                                        className="w-full  h-40  sm:h-80 md:h-56 lg:h-90 object-cover rounded-lg "
+                                        src={`https://e-commerce-websit-2g7x.onrender.com/uploads/${item.img}`}
+                                        alt={item.name}
+                                    />
+
+                                    <p className="text-sm sm:text-lg mt-2">
+                                        {item.name}
+                                    </p>
+
+                                    <p className="text-base sm:text-xl">
+                                        Price : ${item.price}
+                                    </p>
+
+                                    <div className="flex gap-2 sm:gap-4 flex-wrap justify-center">
+
+                                        {
+                                             (
+                                                <button
+                                                    onClick={() => { addcart(item) }}
+                                                    className="   mt-3  px-4 sm:px-6  py-2  bg-pink-600  hover:bg-pink-700 text-black font-semibold rounded-lg shadow   transition text-sm sm:text-base
+                                                "
+                                                >
+                                                    Add to cart
+                                                </button>
+                                            )
+                                        }
+
+                                       
+
+                                    </div>
+
+                                </div>
+                            ))
+                        }
+
+                    </div>
 
                 </div>
 
