@@ -4,7 +4,7 @@ const {Schema,model, default: mongoose}=require("mongoose")
 
 const orderSchema = new Schema({
 
-    userid: {
+    userId: {
         type: mongoose.Schema.Types.ObjectId,
         ref: "user",
         required:true

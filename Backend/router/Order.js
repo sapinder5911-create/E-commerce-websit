@@ -6,7 +6,7 @@ const { authMiddleware } = require("../Middleware/auth")
 router.post("/create", authMiddleware, async (req, res) => {
     try {
         const { productname, address,img,email, price, customerName, } = req.body;
-        const newcart = new Order({userid:req.userid, productname, address, price, customerName, img, email, });
+        const newcart = new Order({userId:req.userId, productname, address, price, customerName, img, email, });
         await newcart.save();
         res.status(200).json({ message: "product add suucesfully" });
     } catch (err) {

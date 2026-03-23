@@ -259,6 +259,7 @@ function Checkout() {
     const onSubmit = async (data) => {
         try {
             await axios.post("https://e-commerce-websit-2g7x.onrender.com/api/create", {
+                
                 productname: productitem.name,
                 price: productitem.price,
                 img: productitem.img,
