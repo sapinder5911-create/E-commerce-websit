@@ -265,7 +265,9 @@ function Checkout() {
                 customerName: data.name,
                 email: data.email,
                 address: data.address,
-            });
+            },
+                { withCredentials: true },
+            );
 
             toast.success("Order placed successfully!");
             setCartItems([]);

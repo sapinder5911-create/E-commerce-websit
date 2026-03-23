@@ -1,8 +1,18 @@
 // const { number } = require("framer-motion");
-const {Schema,model}=require("mongoose")
+const {Schema,model, default: mongoose}=require("mongoose")
 // const mongoose = require("mongoose");
 
 const orderSchema = new Schema({
+
+    userid: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "user",
+        required:true
+    },
+
+
+
+
     productname: { type: String, required: true },
     price: { type: Number, required: true },
 
