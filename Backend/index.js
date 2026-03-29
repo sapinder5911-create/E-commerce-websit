@@ -26,8 +26,7 @@ app.use(cors({
 }))
 
 
-    // < img src = {`http://localhost:5000/uploads/${filename}`} alt = "Uploaded" />
-
+   
 app.use("/api", router)
 app.use("/api", ProductRouter)
 app.use("/api", upload)
@@ -38,7 +37,7 @@ app.use("/api",cart)
 
 
 app.get("/", (req, res) => {
-    // res.cookie("name", "sapinder")
+   
     res.send("Hello page")
 })
 

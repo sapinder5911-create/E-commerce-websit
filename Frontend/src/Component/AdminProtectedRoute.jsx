@@ -7,7 +7,7 @@ const AdminProtectedRoute = ({ children }) => {
     const role = localStorage.getItem("role");
 
     if (role !== "admin") {
-        return <Navigate to="/" />; // redirect normal users
+        return <Navigate to="/" />; 
     }
 
     return children;

@@ -18,12 +18,7 @@ router.post("/create", authMiddleware, async (req, res) => {
 
 
 router.get("/order", authMiddleware,async (req, res) => {
-    // try {
-    //     const orders = await Order.find(); 
-    //     res.status(200).json(orders);
-    // } catch (err) {
-    //     res.status(500).json({ message: err.message });
-    // }
+    
     try {
         if (!req.userId) {
             return res.status(401).json({ message: "User not authenticated" });

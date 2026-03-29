@@ -18,7 +18,7 @@ const router = express.Router()
 
 router.get("/getcart", async (req, res) => {
     try {
-        const items = await Cart.find(); // Fetch all items in cart collection
+        const items = await Cart.find(); 
         res.status(200).json(items);
     } catch (err) {
         res.status(500).json({ message: err.message });
@@ -27,7 +27,7 @@ router.get("/getcart", async (req, res) => {
 
 router.delete("/deletecart/:id", async (req, res) => {
     try {
-        const { id } = req.params; // get id from URL
+        const { id } = req.params; 
         await Cart.findByIdAndDelete(id);
 
         res.status(200).json({ message: "Cart item deleted successfully" });

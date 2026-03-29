@@ -4,12 +4,12 @@
 
 
 import { Outlet, Link } from "react-router-dom";
-// import Back from "../assets/side.jpg";
+
 
 function AdminLayout() {
     return (
         <div className="flex min-h-screen bg-gray-100">
-            {/* LEFT STICKY SIDEBAR */}
+            
             <div className="w-64 bg-gray-900 text-white p-6 ">
                 <h1 className="  text-xl font-bold mb-6 m-r-5 ">Admin </h1>
 
@@ -55,10 +55,10 @@ function AdminLayout() {
                 </ul>
             </div>
 
-            {/* RIGHT SIDE CONTENT */}
+           
             <main
                 className="flex-1 p-6 bg-gray-100 bg-cover bg-center bg-no-repeat"
-            // style={{ backgroundImage: `URL(${Back})` }}
+           
             >
                 <Outlet />
             </main>
